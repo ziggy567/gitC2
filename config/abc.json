@@ -3,6 +3,6 @@
 	 "module" : "dirlister"
 	},
 	{
-	 "module" : "shell_exec"
+	 "module" : "environment"
 	}
 ]
